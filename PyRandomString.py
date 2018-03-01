@@ -1,5 +1,6 @@
-from random import choice as c
 """ PyRandomString """
+from random import choice as c
+
 
 LIST_CH = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
            'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
@@ -15,4 +16,5 @@ def rand_str(ch_nb):
     rdm_str = ""
     for _ in range(ch_nb):
         rdm_str += c(LIST_CH)
-    print(rdm_str)
+    return rdm_str
+
